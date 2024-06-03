@@ -5,11 +5,17 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx tsc && node dist/test/EnrollStudent.test.js"
   },
   "author": "Diego Breeg",
   "license": "ISC",
   "devDependencies": {
+    "ts-node": "^10.9.2",
     "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.13.0",
+    "express": "^4.19.2"
   }
 }
